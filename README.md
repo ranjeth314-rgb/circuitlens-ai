@@ -1,10 +1,12 @@
-Add screenshots or a short GIF of the working application here.
+# Models
 
-Suggested evidence:
-1. Camera/image input
-2. Detected component
-3. OCR output
-4. Troubleshooting result
-5. Final UI
+Place your trained electronics-component detector here as:
 
-Do not add private personal data to screenshots.
+`best.pt`
+
+The application will load it automatically if the Ultralytics-compatible model exists.
+
+Recommended custom classes:
+`resistor`, `capacitor`, `diode`, `led`, `transistor`, `ic`.
+
+For Qualcomm deployment, convert/optimize a supported model using the appropriate Qualcomm AI Hub/QNN workflow and document the exact model and measured target-hardware results.
